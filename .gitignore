@@ -15,6 +15,11 @@
 # production
 /build
 
+# production Intellij
+/.idea
+
+.env
+
 # misc
 .DS_Store
 *.pem
