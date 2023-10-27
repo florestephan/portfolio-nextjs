@@ -1,0 +1,32 @@
+.about {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 30px;
+
+  h2 {
+    grid-row: 1;
+    place-self: start;
+    text-align: right;
+    grid-column: 1/13;
+    color: var(--secColor);
+    font-size: clamp(70px, 10vw, 150px);
+
+    span {
+      &:nth-last-child(-n + 4) {
+        -webkit-text-stroke: 0.5px var(--secColor);
+        color: var(--primColor);
+      }
+    }
+  }
+
+  .blockText {
+    grid-column: 8/12;
+    color: var(--secColor);
+    place-self: flex-start;
+    grid-row: 1;
+    line-height: 1.3;
+    margin-top: 12vh;
+    font-size: 17px;
+  }
+}

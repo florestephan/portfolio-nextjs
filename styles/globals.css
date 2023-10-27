@@ -40,6 +40,14 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    background: var(--primColor);
+    font-family: var(--font-sanserif);
+    font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 400;
 }
 
 ol, ul {
@@ -59,4 +67,9 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+html {
+    /*fix le bug horizontal*/
+    overflow-x: hidden;
 }

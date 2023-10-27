@@ -1,0 +1,22 @@
+.works {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 30px;
+
+  h1 {
+    place-self: start;
+    grid-column: 1/13;
+    color: var(--secColor);
+    text-align: left;
+    font-size: clamp(70px, 10vw, 150px);
+  }
+
+  h2 {
+    place-self: start;
+    text-align: right;
+    grid-column: 1/13;
+    color: var(--secColor);
+    font-size: clamp(70px, 10vw, 150px);
+  }
+}

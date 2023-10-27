@@ -1,10 +1,19 @@
-import {DM_Sans} from 'next/font/google'
+import {DM_Sans, GFS_Didot} from 'next/font/google'
 import '@/styles/globals.css'
 
 const DMSans = DM_Sans({
         subsets: ['latin'],
         weight: ['200'],
         display: 'swap',
+        variable: "--font-sanserif",
+    },
+)
+
+const GFSDidot = GFS_Didot({
+        subsets: ['greek'],
+        weight: ['400'],
+        display: 'swap',
+        variable: "--font-serif",
     },
 )
 export const metadata = {
@@ -15,8 +24,8 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en">
-        <body className={DMSans.className}>
-            {children}
+        <body className={`${DMSans.variable} ${GFSDidot.variable}`}>
+        {children}
         </body>
         </html>
     )
