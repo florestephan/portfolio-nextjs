@@ -3,7 +3,7 @@
 import styles from './scene.module.scss'
 import {Canvas} from "@react-three/fiber";
 import Model from "@/components/Scene/Model";
-import {Environment, orthographicCamera} from "@react-three/drei";
+import {Environment} from "@react-three/drei";
 import {useEffect} from "react";
 import {useMotionValue, useSpring} from "framer-motion";
 

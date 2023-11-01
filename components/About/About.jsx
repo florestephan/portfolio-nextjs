@@ -14,7 +14,7 @@ function About() {
             </h2>
 
             <p className={styles.blockText}>
-                I'm Stéphan,
+                I&apos;m Stéphan,
                 a twenty-five years old
                 front-end developer. Currently
                 based in France.
