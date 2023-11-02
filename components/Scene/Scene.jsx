@@ -1,6 +1,7 @@
 "use client"
 
 import styles from './scene.module.scss'
+import {Suspense} from 'react'
 import {Canvas} from "@react-three/fiber";
 import Model from "@/components/Scene/Model";
 import {Environment} from "@react-three/drei";
@@ -40,8 +41,10 @@ function Scene() {
 
     return (
         <Canvas className={styles.canvas} camera={{position: [0, 0, 1], zoom: 1.5}}>
-            <Model mouse={smoothMouse}/>
-            <Environment preset="forest"/>
+            <Suspense fallback={null}>
+                <Model mouse={smoothMouse}/>
+                <Environment preset="forest"/>
+            </Suspense>
         </Canvas>
     );
 }

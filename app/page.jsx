@@ -6,8 +6,13 @@ import Scene from "@/components/Scene/Scene";
 import Home from "@/components/Home/Home";
 import About from "@/components/About/About";
 import Works from "@/components/Works/Works";
+import {useState} from "react";
 
 export default function Root() {
+
+
+    const [loading, setLoading] = useState(true)
+    console.log(loading)
 
     return (
         <>
