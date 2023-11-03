@@ -6,17 +6,25 @@ import Scene from "@/components/Scene/Scene";
 import Home from "@/components/Home/Home";
 import About from "@/components/About/About";
 import Works from "@/components/Works/Works";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import Preloader from "@/components/Preloader/Preloader";
 
 export default function Root() {
 
 
     const [loading, setLoading] = useState(true)
-    console.log(loading)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 9000)
+    }, []);
 
     return (
         <>
             <ReactLenis options={{orientation: 'horizontal'}} root>
+                {loading && <Preloader/>}
+
                 <main className={styles.main}>
                     <Home/>
                     <About/>

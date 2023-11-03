@@ -23,37 +23,51 @@ function Home() {
         <section ref={body} className={styles.home}>
 
             <div className={styles.lineMaskHead}>
-                <h1>
+                <motion.h1
+                    initial={{y: "100%"}}
+                    animate={{y: "0%"}}
+                    transition={{ease: [0.22, 1, 0.36, 1], duration: 1.5, delay: 7.3}}
+                >
                     {wordHead.split("").map((letter, index) => (
                         <span key={index}>{letter}</span>
                     ))}
-                </h1>
+                </motion.h1>
             </div>
 
             <div className={styles.arrow}>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="8"
-                    fill="none"
-                    viewBox="0 0 22 8"
+                <motion.div
+                    initial={{y: "100%"}}
+                    animate={{y: "0%"}}
+                    transition={{ease: [0.22, 1, 0.36, 1], duration: 1, delay: 7.2}}
                 >
-                    <path
-                        stroke="#CEC0AD"
-                        strokeWidth="0.2"
-                        d="M17.757 1L21 4m0 0l-3.243 3M21 4H0"
-                    ></path>
-                </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="8"
+                        fill="none"
+                        viewBox="0 0 22 8"
+                    >
+                        <path
+                            stroke="#CEC0AD"
+                            strokeWidth="0.2"
+                            d="M17.757 1L21 4m0 0l-3.243 3M21 4H0"
+                        ></path>
+                    </svg>
 
-                <span>scroll</span>
+                    <span>scroll</span>
+                </motion.div>
             </div>
 
             <div className={styles.lineMaskFoot}>
-                <h2>
+                <motion.h2
+                    initial={{y: "100%"}}
+                    animate={{y: "0%"}}
+                    transition={{ease: [0.22, 1, 0.36, 1], duration: 1.5, delay: 7.2}}
+                >
                     {wordEnd.split("").map((letter, index) => (
                         <span key={index}>{letter}</span>
                     ))}
-                </h2>
+                </motion.h2>
             </div>
         </section>
     );
