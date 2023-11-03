@@ -1,17 +1,9 @@
 import styles from './about.module.scss'
-import {useRef} from "react";
 import {motion} from "framer-motion";
 
 function About() {
 
     const wordHead = "About";
-
-    const title = useRef(null)
-    const text1 = useRef(null)
-    const text2 = useRef(null)
-    const arrow = useRef(null)
-    const linkFoot = useRef(null)
-
 
     return (
         <section className={styles.about}>
@@ -42,7 +34,7 @@ function About() {
                 </motion.p>
             </div>
 
-            <div ref={arrow} className={styles.arrow}>
+            <div className={styles.arrow}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
