@@ -6,11 +6,10 @@ import Scene from "@/components/Scene/Scene";
 import Home from "@/components/Home/Home";
 import About from "@/components/About/About";
 import Works from "@/components/Works/Works";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import Preloader from "@/components/Preloader/Preloader";
 
 export default function Root() {
-
 
     const [loading, setLoading] = useState(true)
 

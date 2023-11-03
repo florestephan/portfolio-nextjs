@@ -2,13 +2,23 @@ import styles from './works.module.scss'
 import {Canvas} from '@react-three/fiber'
 import Flag from "@/components/Works/Flag";
 import {Suspense} from "react";
+import {motion} from "framer-motion";
 
 function Works() {
 
-
     return (
         <section className={styles.works}>
-            <a target="_blank" href="https://www.wrksagency.com/"><h2>wrksagency<span>.com</span></h2></a>
+
+            <div className={styles.maskTitle}>
+                <motion.a target="_blank" href="https://www.wrksagency.com/"
+                          initial={{y: "100%"}}
+                          whileInView={{y: "0%"}}
+                          viewport={{once: true}}
+                          transition={{delay: 0.3, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}>
+                    <h2>wrksagency<span>.com</span></h2>
+                </motion.a>
+            </div>
+
 
             <div className={styles.arrow}>
                 <svg
@@ -27,6 +37,7 @@ function Works() {
 
                 <span>next</span>
             </div>
+
             <Canvas className={styles.canvas}>
                 <Suspense fallback={null}>
                     <ambientLight intensity={2}/>
@@ -34,17 +45,36 @@ function Works() {
                 </Suspense>
             </Canvas>
 
-            <h3 className={styles.number}>
-                N°1
-            </h3>
+            <div className={styles.maskNumber}>
+                <motion.h3
+                    initial={{y: "100%"}}
+                    whileInView={{y: "0%"}}
+                    viewport={{once: true}}
+                    transition={{delay: 0.3, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
+                    className={styles.number}>
+                    N°1
+                </motion.h3>
+            </div>
 
             <div className={styles.blockText}>
                 <p className={styles.role}>
-                    Role : Developer <br/>
-                    Stack : PHP / GSAP / Wordpress
+                    <motion.span
+                        initial={{y: "100%"}}
+                        whileInView={{y: "0%"}}
+                        viewport={{once: true}}
+                        transition={{delay: 0.5, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}>
+                        Role : Developer <br/>
+                        Stack : PHP / GSAP / Wordpress
+                    </motion.span>
                 </p>
                 <h3 className={styles.with}>
-                    <span>w/</span> mashvp
+                    <motion.div
+                        initial={{y: "100%"}}
+                        whileInView={{y: "0%"}}
+                        viewport={{once: true}}
+                        transition={{delay: 0.4, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}>
+                        <span>w/</span> mashvp
+                    </motion.div>
                 </h3>
             </div>
 

@@ -6,7 +6,7 @@ import {MeshDistortMaterial, useCursor} from '@react-three/drei'
 
 function Flag({img}) {
     const ref = useRef()
-    const [hovered, hover] = useState(false) // start with false
+    const [hovered, hover] = useState(true) // start with false
     const texture = useLoader(THREE.TextureLoader, img)
     useCursor(hovered)
     useFrame(() => {
