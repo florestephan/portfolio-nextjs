@@ -72,4 +72,12 @@
       }
     }
   }
+
+  @media screen and (max-width: 450px) {
+    .arrow {
+      justify-self: center;
+      padding: unset;
+      margin-top: 71vh;
+    }
+  }
 }
