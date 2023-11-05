@@ -16,7 +16,6 @@ function Scene() {
         y: useMotionValue(0)
     }
 
-
     //Me permet de gérer le lerp sur le move du mesh
     const smoothMouse = {
         x: useSpring(mouse.x, {stiffness: 800, damping: 100, mass: 1}),
@@ -40,12 +39,14 @@ function Scene() {
     }, []);
 
     return (
-        <Canvas className={styles.canvas} camera={{position: [0, 0, 1], zoom: 1.5}}>
-            <Suspense fallback={null}>
-                <Model mouse={smoothMouse}/>
-                <Environment preset="forest"/>
-            </Suspense>
-        </Canvas>
+        <>
+            <Canvas className={styles.canvas} camera={{position: [0, 0, 1], zoom: 1.5}}>
+                <Suspense fallback={null}>
+                    <Model mouse={smoothMouse}/>
+                    <Environment preset="forest"/>
+                </Suspense>
+            </Canvas>
+        </>
     );
 }
 

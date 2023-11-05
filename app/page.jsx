@@ -9,6 +9,7 @@ import Works from "@/components/Works/Works";
 import {useEffect, useState} from "react";
 import Preloader from "@/components/Preloader/Preloader";
 import data from 'data-works.json'
+import CursorLerp from "@/components/CursorLerp/CursorLerp";
 
 
 export default function Root() {
@@ -36,6 +37,7 @@ export default function Root() {
                     ))}
                 </main>
                 <Scene/>
+                <CursorLerp/>
             </ReactLenis>
         </>
 
