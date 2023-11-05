@@ -15,7 +15,7 @@
       -webkit-text-stroke: 0.5px var(--secColor);
       color: var(--secColor);
       text-align: left;
-      font-size: clamp(70px, 10vw, 150px);
+      font-size: clamp(50px, 10vw, 150px);
       overflow: hidden;
 
       span {
@@ -62,7 +62,7 @@
     h2 {
       overflow: hidden;
       color: var(--secColor);
-      font-size: clamp(70px, 10vw, 150px);
+      font-size: clamp(50px, 10vw, 150px);
 
       span {
         &:nth-child(-n + 5) {

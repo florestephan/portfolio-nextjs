@@ -14,7 +14,7 @@
 
     h2 {
       color: var(--secColor);
-      font-size: clamp(70px, 10vw, 150px);
+      font-size: clamp(50px, 10vw, 150px);
 
       span {
         &:nth-last-child(-n + 4) {
@@ -108,6 +108,20 @@
         color: var(--secColor);
         text-decoration: none;
       }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .maskText, .maskText2 {
+      grid-column: 1/13;
+
+      .blockText, .blockText2 {
+        font-size: 26px;
+      }
+    }
+
+    .maskText2 {
+      align-self: center;
     }
   }
 }

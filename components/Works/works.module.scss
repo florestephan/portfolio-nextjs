@@ -21,7 +21,7 @@
         //text-transform: uppercase;
 
         color: var(--secColor);
-        font-size: clamp(70px, 10vw, 150px);
+        font-size: clamp(50px, 10vw, 150px);
 
         span {
           &:nth-last-child(-n + 3) {
@@ -74,7 +74,7 @@
     .number {
       padding-top: 150px;
       z-index: 10;
-      font-size: clamp(70px, 13vw, 220px);
+      font-size: clamp(50px, 13vw, 220px);
       color: rgba(206, 192, 173, 0.38);
     }
   }
@@ -85,7 +85,7 @@
     grid-column: 1/13;
 
     .with {
-      font-size: clamp(70px, 10vw, 150px);
+      font-size: clamp(50px, 10vw, 150px);
       color: var(--secColor);
       overflow: hidden;
 
@@ -110,6 +110,13 @@
       span {
         display: block;
       }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .canvas {
+      grid-column: 2/12;
+      height: 50vh !important;
     }
   }
 }
