@@ -6,8 +6,10 @@ import Scene from "@/components/Scene/Scene";
 import Home from "@/components/Home/Home";
 import About from "@/components/About/About";
 import Works from "@/components/Works/Works";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import Preloader from "@/components/Preloader/Preloader";
+import data from 'data-works.json'
+
 
 export default function Root() {
 
@@ -19,6 +21,7 @@ export default function Root() {
         }, 9000)
     }, []);
 
+
     return (
         <>
             <ReactLenis options={{orientation: 'horizontal'}} root>
@@ -27,7 +30,9 @@ export default function Root() {
                 <main className={styles.main}>
                     <Home/>
                     <About/>
-                    <Works/>
+                    {data.map((value, index) => (
+                        <Works key={index} props={value}/>
+                    ))}
                 </main>
                 <Scene/>
             </ReactLenis>

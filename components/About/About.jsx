@@ -12,7 +12,7 @@ function About() {
                     initial={{y: "100%"}}
                     whileInView={{y: "0%"}}
                     viewport={{once: true}}
-                    transition={{delay: 0.3, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
+                    transition={{threshold: 0.5, delay: 0.7, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
                 >
                     {wordHead.split("").map((letter, index) => (
                         <span key={index}>{letter}</span>
@@ -25,7 +25,7 @@ function About() {
                     initial={{y: "100%"}}
                     whileInView={{y: "0%"}}
                     viewport={{once: true}}
-                    transition={{delay: 0.3, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
+                    transition={{threshold: 0.5, delay: 0.7, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
                     className={styles.blockText}>
                     I&apos;m Stéphan,
                     a twenty-five years old
@@ -57,7 +57,7 @@ function About() {
                     initial={{y: "100%"}}
                     whileInView={{y: "0%"}}
                     viewport={{once: true}}
-                    transition={{delay: 0.3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
+                    transition={{threshold: 0.5, delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                     className={styles.footer}>
                     <a href="https://twitter.com/StephanFlores" target="_blank">Twitter</a>
                     <a href="https://www.linkedin.com/in/st%C3%A9phan-flores-05572315a/" target="_blank">Linkedin</a>
@@ -70,9 +70,9 @@ function About() {
                     initial={{y: "100%"}}
                     whileInView={{y: "0%"}}
                     viewport={{once: true}}
-                    transition={{delay: 0.3, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
+                    transition={{threshold: 0.5, delay: 0.7, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
                     className={styles.blockText2}>
-                    NextJS, ThreeJS, Scss.<br/>
+                    NextJS, React, Scss.<br/>
                     Want to discuss ? <a href="mailto:hello@stephanflores.com">hello@stephanflores.com</a>
                 </motion.p>
             </div>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "wrks",
+    "ext": ".com",
+    "image": "wrksWe.png",
+    "role": "Developer",
+    "stack": "PHP / GSAP / Wordpress",
+    "with": "mashvp",
+    "status": true
+  },
+  {
+    "id": 2,
+    "name": "zana",
+    "ext": ".fr",
+    "image": "zanaWeb.png",
+    "role": "Developer",
+    "stack": "PHP / Wordpress / SCSS",
+    "with": "mashvp",
+    "status": true
+  },
+  {
+    "id": 3,
+    "name": "totem-films",
+    "ext": ".com",
+    "image": "totem.png",
+    "role": "Developer",
+    "stack": "PHP / Wordpress / SCSS",
+    "with": "mashvp",
+    "status": false
+  }
+]

@@ -1,7 +1,6 @@
 .works {
-  max-width: 100vw;
-  width: 32%;
-  margin: 20px auto 0 auto;
+  margin: 20px;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 30px;
