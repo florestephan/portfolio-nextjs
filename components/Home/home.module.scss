@@ -73,7 +73,21 @@
     }
   }
 
+  .mobileTxt {
+    display: none;
+  }
+
   @media screen and (max-width: 450px) {
+    .mobileTxt {
+      display: block;
+      grid-column: 1/13;
+      position: absolute;
+      bottom: 160px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--secColor);
+    }
+
     .arrow {
       display: none;
       justify-self: center;

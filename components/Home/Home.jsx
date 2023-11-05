@@ -58,6 +58,9 @@ function Home() {
                 </motion.div>
             </div>
 
+            <p className={styles.mobileTxt}>Desktop for better experience</p>
+
+
             <div className={styles.lineMaskFoot}>
                 <motion.h2
                     initial={{y: "100%"}}
