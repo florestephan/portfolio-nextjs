@@ -119,4 +119,19 @@
       height: 50vh !important;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    .arrow {
+      display: none;
+    }
+
+    .blockText {
+      display: block;
+
+      .role{
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
