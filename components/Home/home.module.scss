@@ -80,9 +80,13 @@
       padding: unset;
       margin-top: 60vh;
 
-      span{
+      span {
         display: none;
       }
+    }
+
+    .lineMaskFoot, .lineMaskHead {
+      padding: unset;
     }
   }
 }

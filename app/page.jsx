@@ -24,7 +24,8 @@ export default function Root() {
 
     return (
         <>
-            <ReactLenis options={{orientation: 'horizontal', smoothTouch: true, syncTouch: true}} root>
+            <ReactLenis options={{orientation: 'horizontal', smoothTouch: true, syncTouch: true, smoothWheel: true}}
+                        root>
                 {loading && <Preloader/>}
 
                 <main className={styles.main}>

@@ -117,11 +117,40 @@
 
       .blockText, .blockText2 {
         font-size: 26px;
+        padding: unset;
       }
     }
 
     .maskText2 {
       align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .maskText, .maskText2 {
+      .blockText, .blockText2 {
+        font-size: 20px;
+      }
+    }
+
+    .maskText {
+      padding-top: 20px;
+    }
+
+    .arrow {
+      display: none;
+      justify-self: center;
+      padding: unset;
+      margin-top: 60vh;
+
+      span {
+        display: none;
+      }
+    }
+
+    .maskFoot {
+      padding: unset;
     }
   }
 }
