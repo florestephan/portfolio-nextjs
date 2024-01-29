@@ -15,7 +15,7 @@
       -webkit-text-stroke: 0.5px var(--secColor);
       color: var(--secColor);
       text-align: left;
-      font-size: clamp(50px, 10vw, 150px);
+      font-size: clamp(50px, 5vw, 150px);
       overflow: hidden;
 
       span {
@@ -52,17 +52,23 @@
   }
 
   .lineMaskFoot {
-
     overflow: hidden;
-    place-self: end;
+    align-self: end;
     text-align: right;
     grid-column: 1/13;
     padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .date {
+      align-self: end;
+      color: var(--secColor);
+    }
 
     h2 {
       overflow: hidden;
       color: var(--secColor);
-      font-size: clamp(50px, 10vw, 150px);
+      font-size: clamp(50px, 5vw, 150px);
 
       span {
         &:nth-child(-n + 5) {

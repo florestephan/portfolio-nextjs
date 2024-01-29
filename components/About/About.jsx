@@ -72,7 +72,7 @@ function About() {
                     viewport={{once: true}}
                     transition={{threshold: 0.5, delay: 0.7, duration: 1.5, ease: [0.22, 1, 0.36, 1]}}
                     className={styles.blockText2}>
-                    NextJS, React, Scss.<br/>
+                    Shopify, Wordpress, React.<br/>
                     Want to discuss ? <a href="mailto:hello@stephanflores.com">hello@stephanflores.com</a>
                 </motion.p>
             </div>

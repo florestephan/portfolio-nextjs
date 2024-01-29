@@ -13,6 +13,7 @@ function Works({props}) {
 
             <div className={styles.maskTitle}>
                 <motion.a target="_blank"
+                          href={data.link}
                           initial={{y: "100%"}}
                           whileInView={{y: "0%"}}
                           viewport={{once: true}}

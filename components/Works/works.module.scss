@@ -14,16 +14,18 @@
     grid-column: 1/13;
 
     a {
+      cursor: pointer;
       display: block;
       text-decoration: none;
 
       h2 {
         //text-transform: uppercase;
-
+        cursor: pointer;
         color: var(--secColor);
         font-size: clamp(50px, 10vw, 150px);
 
         span {
+          cursor: pointer;
           &:nth-last-child(-n + 3) {
             -webkit-text-stroke: 0.5px var(--secColor);
             color: var(--primColor);
@@ -128,7 +130,7 @@
     .blockText {
       display: block;
 
-      .role{
+      .role {
         font-size: 16px;
         margin-bottom: 20px;
       }

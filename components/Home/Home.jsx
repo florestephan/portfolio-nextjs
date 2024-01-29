@@ -62,6 +62,7 @@ function Home() {
 
 
             <div className={styles.lineMaskFoot}>
+                <p className={styles.date}>2K23</p>
                 <motion.h2
                     initial={{y: "100%"}}
                     animate={{y: "0%"}}

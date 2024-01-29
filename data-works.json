@@ -1,31 +1,34 @@
 [
   {
     "id": 1,
-    "name": "wrks",
+    "name": "stellaetsuzie",
     "ext": ".com",
-    "image": "wrksWe.png",
+    "link": "https://stellaetsuzie.com/",
+    "image": "stella&suzie.png",
     "role": "Developer",
-    "stack": "PHP / GSAP / Wordpress",
+    "stack": "Shopify & liquid / JS / SCSS",
     "with": "mashvp",
     "status": true
   },
   {
     "id": 2,
-    "name": "zana",
-    "ext": ".fr",
-    "image": "zanaWeb.png",
+    "name": "wrks",
+    "ext": ".com",
+    "link": "https://www.wrksagency.com/",
+    "image": "wrksWe.png",
     "role": "Developer",
-    "stack": "PHP / Wordpress / SCSS",
+    "stack": "PHP / JS / GSAP / Wordpress",
     "with": "mashvp",
     "status": true
   },
   {
     "id": 3,
-    "name": "totem-films",
+    "name": "gennaro-associes",
     "ext": ".com",
-    "image": "totem.png",
+    "link": "https://gennaro-associes.com/",
+    "image": "gennaro.png",
     "role": "Developer",
-    "stack": "PHP / Wordpress / SCSS",
+    "stack": "PHP / JS / GSAP / Wordpress",
     "with": "mashvp",
     "status": false
   }
