@@ -31,10 +31,10 @@ export default function Root() {
 
                 <main className={styles.main}>
                     <Home/>
-                    <About/>
-                    {data.map((value, index) => (
-                        <Works key={index} props={value}/>
-                    ))}
+                    {/*<About/>*/}
+                    {/*{data.map((value, index) => (*/}
+                    {/*    <Works key={index} props={value}/>*/}
+                    {/*))}*/}
                 </main>
                 <Scene/>
                 <CursorLerp/>

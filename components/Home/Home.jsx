@@ -19,50 +19,81 @@ function Home() {
     const body = useRef(null)
     const isInView = useInView(body, {margin: "-10%"})
 
+
     return (
         <section ref={body} className={styles.home}>
 
-            <div className={styles.lineMaskHead}>
-                <motion.h1
-                    initial={{y: "100%"}}
-                    animate={{y: "0%"}}
-                    transition={{ease: [0.22, 1, 0.36, 1], duration: 1.5, delay: 7.3}}
-                >
-                    {wordHead.split("").map((letter, index) => (
-                        <span key={index}>{letter}</span>
-                    ))}
-                </motion.h1>
-            </div>
-
-            <div className={styles.arrow}>
-                <motion.div
-                    initial={{y: "100%"}}
-                    animate={{y: "0%"}}
-                    transition={{ease: [0.22, 1, 0.36, 1], duration: 1, delay: 7.2}}
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="8"
-                        fill="none"
-                        viewBox="0 0 22 8"
+            <div className={styles.headerMask}>
+                <div className={styles.lineMaskHead}>
+                    <motion.h1
+                        initial={{y: "100%"}}
+                        animate={{y: "0%"}}
+                        transition={{ease: [0.22, 1, 0.36, 1], duration: 1.5, delay: 7.3}}
                     >
-                        <path
-                            stroke="#CEC0AD"
-                            strokeWidth="0.2"
-                            d="M17.757 1L21 4m0 0l-3.243 3M21 4H0"
-                        ></path>
-                    </svg>
+                        {wordHead.split("").map((letter, index) => (
+                            <span key={index}>{letter}</span>
+                        ))}
+                    </motion.h1>
+                </div>
 
-                    <span>scroll</span>
-                </motion.div>
+                <div className={styles.maskHeadRight}>
+                    <motion.div
+                        initial={{y: "100%"}}
+                        whileInView={{y: "0%"}}
+                        viewport={{once: true}}
+                        transition={{threshold: 0.5, delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1]}}
+                        className={styles.footer}>
+                        <a href="https://twitter.com/StephanFlores" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/in/st%C3%A9phan-flores-05572315a/"
+                           target="_blank">Linkedin</a>
+                        <a href="https://github.com/florestephan" target="_blank">Github</a>
+                    </motion.div>
+                </div>
+
+                <div className={styles.maskHeadRightMobile}>
+                    <motion.div
+                        initial={{y: "100%"}}
+                        whileInView={{y: "0%"}}
+                        viewport={{once: true}}
+                        transition={{threshold: 0.5, delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1]}}
+                        className={styles.footer}>
+                        <a href="https://twitter.com/StephanFlores" target="_blank">Twt</a>
+                        <a href="https://www.linkedin.com/in/st%C3%A9phan-flores-05572315a/"
+                           target="_blank">Lkn</a>
+                        <a href="https://github.com/florestephan" target="_blank">Git</a>
+                    </motion.div>
+                </div>
             </div>
 
-            <p className={styles.mobileTxt}>Desktop for better experience</p>
+            <motion.div
+                className={styles.projects}>
+                <div className={styles.project}>
+                    <a target="_blank" href="https://stellaetsuzie.com/">Maison Stella & Suzie</a>
+                    <p>w/Mashvp</p>
+                    <p>r/Developer</p>
+                </div>
+                <div className={styles.project}>
+                    <a target="_blank" href="https://gennaro-associes.com/">Gennaro & Associés - Cabinet Immobilier</a>
+                    <p>w/Mashvp</p>
+                    <p>r/Developer</p>
+                </div>
+
+                <div className={styles.project}>
+                    <a target="_blank" href="https://officesgaronne.fr/">Office Garonne - Office Notarial</a>
+                    <p>w/Mashvp</p>
+                    <p>r/Developer</p>
+                </div>
+
+                <div className={styles.project}>
+                    <a target="_blank" href="https://zana.fr/">Charles Zana - Interior design studio</a>
+                    <p>w/Mashvp</p>
+                    <p>r/Developer</p>
+                </div>
+            </motion.div>
 
 
             <div className={styles.lineMaskFoot}>
-                <p className={styles.date}>2K23</p>
+                <a href="mailto:hello@stephanflores.com" className={styles.date}>hello@stephanflores.com</a>
                 <motion.h2
                     initial={{y: "100%"}}
                     animate={{y: "0%"}}
