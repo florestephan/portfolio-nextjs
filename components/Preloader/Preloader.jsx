@@ -23,7 +23,7 @@ function Preloader() {
     useEffect(() => {
         if (isActive) {
             const interval = setInterval(() => {
-                if (counter < 2023) {
+                if (counter < 2024) {
                     setCounter((counter) => counter + 1)
                 } else {
                     clearInterval(interval)
@@ -41,7 +41,7 @@ function Preloader() {
         <motion.section className={styles.preloader}
                         initial={{clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}}
                         animate={{clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)"}}
-                        transition={{ease: [0.22, 1, 0.36, 1], duration: 1.5, delay: 6.5}}
+                        transition={{ease: [0.22, 1, 0.36, 1], duration: 1.7, delay: 6.5}}
         >
             <h2>
                 <motion.span
