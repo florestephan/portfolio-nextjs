@@ -23,6 +23,7 @@ function Home() {
     return (
         <section ref={body} className={styles.home}>
 
+            <p className={styles.indication}>Touch your screen for a surprise</p>
             <div className={styles.headerMask}>
                 <div className={styles.lineMaskHead}>
                     <motion.h1

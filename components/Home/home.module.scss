@@ -5,6 +5,9 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 30px;
 
+  .indication {
+    display: none;
+  }
 
   .headerMask {
     display: flex;
@@ -151,6 +154,17 @@
   }
 
   @media screen and (max-width: 800px) {
+
+    .indication {
+      position: absolute;
+      left: 0;
+      top: 20vh;
+      color: var(--secColor);
+      right: 0;
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+    }
     .headerMask {
       padding-left: unset;
 
